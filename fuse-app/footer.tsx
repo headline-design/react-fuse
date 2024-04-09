@@ -15,10 +15,10 @@ export const Footer = () => {
               About
             </Link>
             <Link
-              to="/next"
+              to="/getting-started"
               className="px-4 py-2 text-white bg-blue-500 rounded-md"
             >
-              Next view
+              Getting started
             </Link>
           </nav>
         </div>

@@ -2,8 +2,9 @@ import { useTheme } from 'next-themes';
 import { Button } from './ui/button';
 import { IconMoon } from '../icons/moon';
 import { IconSun } from '../icons/sun';
+import React from 'react';
 
-export const ThemeToggle = () => {
+const ThemeToggle = () => {
   const { resolvedTheme, setTheme } = useTheme();
 
   return (
@@ -18,3 +19,5 @@ export const ThemeToggle = () => {
     </Button>
   );
 };
+
+export default React.memo(ThemeToggle);
