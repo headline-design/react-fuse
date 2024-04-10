@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/fuse-app/components/ui/button";
 import { Input } from "@/fuse-app/components/ui/input";
 import { ButtonLink } from "@/fuse-app/components/ui/button-link";
+import { IconGithub } from "../icons/github";
 
 export default function MainView2() {
   return (
@@ -26,8 +27,8 @@ export default function MainView2() {
                   <ButtonLink size="lg" to="/getting-started">
                     Get Started{" "}
                   </ButtonLink>
-                  <ButtonLink size="lg" variant="outline" to="/contact">
-                    Contact Sales
+                  <ButtonLink target="_blank" size="lg" variant="outline" to="https://github.com/headline-design/react-fuse">
+                  <IconGithub/>  Github
                   </ButtonLink>
                 </div>
               </div>

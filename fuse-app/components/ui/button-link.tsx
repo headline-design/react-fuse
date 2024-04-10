@@ -46,6 +46,7 @@ const ButtonLink = ({
   size,
   asChild = false,
   children,
+  target,
   ...props
 }: {
   className?: string;
@@ -54,9 +55,11 @@ const ButtonLink = ({
   asChild?: boolean;
   to: string;
   children: React.ReactNode;
+  target?: any;
 }) => {
   return (
     <Link
+    target={target}
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     >
